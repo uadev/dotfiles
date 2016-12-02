@@ -12,3 +12,5 @@ command_exists () {
 if ! command_exists node && command_exists docker ; then
   alias node='docker run -it -v $(pwd):/app -w /app node'
 fi
+
+source ~/.completion/*
