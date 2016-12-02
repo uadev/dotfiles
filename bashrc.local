@@ -10,7 +10,10 @@ command_exists () {
 }
 
 if ! command_exists node && command_exists docker ; then
-  alias node='docker run -it -v $(pwd):/app -w /app node'
+  alias node='docker run --rm -it -v $(pwd):/app -w /app node'
+fi
+if ! command_exists inotifywait && command_exists docker ; then
+  alias inotifywait='docker run --rm -v $(pwd):/app -w /app uadevnet/alpine-inotify-tools inotifywait'
 fi
 
 source ~/.completion/*
