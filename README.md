@@ -5,7 +5,7 @@
 curl -o ~/.screenrc https://raw.githubusercontent.com/uadev/dotfiles/master/.screenrc
 
 #Install bashrc
-curl -o ~/.bashrc.local https://raw.githubusercontent.com/uadev/dotfiles/master/.bashrc
+curl -o ~/.bashrc.local https://raw.githubusercontent.com/uadev/dotfiles/master/bashrc.local
 
 #Install vimrc
 curl -o ~/.vimrc https://raw.githubusercontent.com/uadev/dotfiles/master/.vimrc
