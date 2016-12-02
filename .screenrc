@@ -15,7 +15,7 @@ termcapinfo xterm|xterms|xs|rxvt ti@:te@
 defbce "on"
 
 # Enable 256 color term
-term xterm-256color
+#term xterm-256color
 
 # Cache 30000 lines for scroll back
 defscrollback 30000
@@ -37,3 +37,19 @@ bindkey "^[Od" prev  # change window with ctrl-left
 bindkey "^[Oc" next  # change window with ctrl-right
 
 hardcopydir ~/.screen
+
+# get rid of silly xoff stuff
+bind s split
+
+# navigating regions
+bind j focus down
+bind k focus up
+bind h focus left
+bind l focus right
+
+# resizing regions
+bind + resize +5
+bind - resize -5
+bind = resize =
+
+mousetrack on
