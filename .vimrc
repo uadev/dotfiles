@@ -11,6 +11,10 @@ filetype indent plugin on
 " Enable syntax highlighting
 syntax on
  
+" Set nice looking theme for GUI
+if has("gui_running")
+  colorscheme desert
+endif
  
 "------------------------------------------------------------
 " Must have options {{{1
